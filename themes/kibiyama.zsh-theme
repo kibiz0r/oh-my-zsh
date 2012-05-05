@@ -24,4 +24,4 @@ git_custom_status() {
 
 local user_host='%{$reset_color%}%{$fg[green]%}%n@%m:'
 local current_dir='%{$fg[blue]%}%~%{$reset_color%}'
-PROMPT="${user_host}${current_dir}\$(git_custom_status) "
+PROMPT="${user_host}${current_dir}\$(git_custom_status)%{$reset_color%} "
